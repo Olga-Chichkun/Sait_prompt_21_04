@@ -235,3 +235,18 @@ document.querySelectorAll("a[href]").forEach((link) => {
   });
 });
 
+const cards = Array.from(document.querySelectorAll("#benefits .benefit-grid .card"));
+if (cards.length > 0) {
+  cards.forEach((card) => card.classList.add("cards-item"));
+  let index = 0;
+
+  const activateNextCard = () => {
+    cards.forEach((card) => card.classList.remove("active"));
+    cards[index].classList.add("active");
+    index = (index + 1) % cards.length;
+  };
+
+  activateNextCard();
+  setInterval(activateNextCard, 1000);
+}
+
