@@ -366,18 +366,63 @@ body[data-theme="light"] .cards-item.active {
 }
 
 .about-photo {
+  position: relative;
+  display: inline-block;
   width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
   border-radius: 16px;
   object-fit: cover;
   border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  display: block;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: all 0.3s ease;
 }
 
-.about-photo-wrap:hover .about-photo {
+.about-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 60%,
+    rgba(0,0,0,0.25)
+  );
+}
+
+body.dark .about-photo::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 50%,
+    rgba(0,0,0,0.5)
+  );
+}
+
+body.light .about-photo::after {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0) 50%,
+    rgba(255,255,255,0.4)
+  );
+}
+
+body[data-theme="dark"] .about-photo {
+  box-shadow: 0 10px 40px rgba(0, 210, 255, 0.15);
+}
+
+body[data-theme="light"] .about-photo {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-photo:hover img {
   transform: scale(1.02);
-  box-shadow: 0 14px 34px rgba(22, 34, 48, 0.15);
 }
 
 .about-photo-glow {
@@ -619,6 +664,11 @@ body::after {
 
   .about {
     grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    width: 100%;
+    display: block;
   }
 
   .nav a {

@@ -9,7 +9,9 @@ window.addEventListener("pageshow", () => {
 
 function applyTheme(theme) {
   const dark = theme === "dark";
+  const light = theme === "light";
   body.classList.toggle("dark", dark);
+  body.classList.toggle("light", light);
   body.dataset.theme = dark ? "dark" : "light";
   if (toggleButton) {
     toggleButton.textContent = dark ? "☀️" : "🌙";
