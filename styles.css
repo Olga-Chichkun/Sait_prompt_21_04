@@ -526,8 +526,8 @@ body[data-theme="light"] .final-accent-soft {
 }
 
 .conversion-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
   gap: 20px;
 }
 
@@ -729,7 +729,7 @@ body::after {
   }
 
   .conversion-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
 }
