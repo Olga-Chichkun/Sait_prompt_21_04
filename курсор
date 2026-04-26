@@ -1,0 +1,90 @@
+Enhance the cursor trail to simulate a water ripple effect.
+
+GOAL:
+Particles should behave like drops in water:
+- spread outward slightly
+- slow down
+- dissolve smoothly
+
+---
+
+PARTICLE LOGIC:
+
+1. On cursor move:
+- spawn small particles (1–2px)
+
+2. Each particle should:
+- move not only forward, but slightly OUTWARD (radial spread)
+- have a small random angle deviation
+- gradually slow down (friction)
+
+3. Add "ripple feel":
+- particles expand slightly in radius over time
+- opacity decreases smoothly
+- slight blur increases as they fade
+
+---
+
+MOTION SETTINGS:
+
+- initial velocity: low
+- friction: 0.94–0.97
+- spread angle: random ±15–25 degrees
+- lifetime: 0.5–1.2 seconds
+
+---
+
+VISUAL:
+
+- color: soft cyan / blue (rgba(120, 200, 255, alpha))
+- opacity: start 0.15 → fade to 0
+- add shadow blur for soft glow
+
+---
+
+IMPORTANT EFFECT:
+
+Particles should NOT stay in a line.
+They should:
+→ slightly diverge
+→ expand
+→ dissolve
+
+Like a finger moving through water.
+
+---
+
+EXTRA (IMPORTANT):
+
+Add subtle trailing delay:
+- use previous mouse positions (last 5–10 points)
+- spawn particles along that path
+
+This creates smooth liquid motion instead of dotted line.
+
+---
+
+CANVAS SETTINGS:
+
+- globalCompositeOperation = "lighter" (soft glow blending)
+- use requestAnimationFrame
+
+---
+
+STOP CONDITION:
+
+If effect looks like:
+- sparks → wrong
+- stars → wrong
+- neon trail → wrong
+
+It must feel:
+- fluid
+- soft
+- almost invisible
+
+---
+
+OUTPUT:
+
+Update script.js with full working particle physics.

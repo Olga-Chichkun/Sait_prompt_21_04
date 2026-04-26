@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPT-агенты для бизнеса | Автоматизация за 3-7 дней</title>
-  <meta name="description" content="Соберу GPT-агента под ваш бизнес за 3-7 дней. Уберите до 70% ручной работы и получите результат уже в первую неделю.">
+  <title>AI-инструменты для бизнеса | Автоматизация за 3-7 дней</title>
+  <meta name="description" content="Создаю AI-инструменты под задачи бизнеса за 3-7 дней: GPT-агенты, AI-консультанты, Telegram-боты и автоматизации. Снижайте ручную нагрузку и ускоряйте процессы уже в первую неделю.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,11 +14,16 @@
   <canvas id="cursorCanvas" aria-hidden="true"></canvas>
 
   <header class="site-header container">
-    <a class="brand" href="#hero">GPT для бизнеса</a>
+    <a class="brand" href="#hero" aria-label="AI для бизнеса">AI для бизнеса</a>
     <nav class="nav">
       <a href="#how">Как это работает</a>
       <a href="#faq">FAQ</a>
       <a href="offer.html" class="nav-button">Договор оферты</a>
+      <div class="lang-switch" role="group" aria-label="Выбор языка">
+        <button class="lang-btn is-active" type="button" data-lang="ru">RU</button>
+        <button class="lang-btn" type="button" data-lang="en">EN</button>
+        <button class="lang-btn" type="button" data-lang="es">ES</button>
+      </div>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Переключить тему">🌙</button>
     </nav>
   </header>
@@ -26,106 +31,228 @@
   <main>
     <section id="hero" class="hero container section">
       <div class="hero-content">
-        <h1 class="hero-title">СОБЕРУ GPT-АГЕНТА ПОД ВАШ БИЗНЕС</h1>
-        <p class="hero-lead">за 3-7 дней, который уберёт до <span class="hero-accent">70%</span> ручной работы и начнёт экономить вам время уже в первую неделю</p>
-        <p class="subheadline">Автоматизируйте переписку, продажи и задачи без сложных внедрений</p>
-        <a class="btn btn-primary" href="https://t.me/neuro_for_me" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+        <h1 class="hero-title"><span class="hero-title-accent">AI-инструменты</span>, которые убирают рутину и приводят клиентов</h1>
+        <p class="hero-lead">Собираю GPT-агентов, Telegram-ботов, сайты и приложения под задачи бизнеса: заявки, продажи, запись, клиентский сервис и автоматизацию процессов.</p>
+        <p class="hero-support">Без сложной разработки, лишней теории и хаоса. От идеи до рабочего решения — за несколько дней.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://t.me/neuro_for_me" target="_blank" rel="noopener noreferrer">Обсудить AI-решение</a>
+          <a class="btn btn-ghost hero-secondary-btn" href="#benefits">Посмотреть форматы работы</a>
+        </div>
       </div>
     </section>
 
     <section id="pain" class="container section">
-      <h2>Почему у большинства AI не даёт результата</h2>
-      <ul class="pain-list">
-        <li>Слишком сложно внедрить</li>
-        <li>Требует постоянного контроля</li>
-        <li>Не интегрируется в реальные процессы</li>
-        <li>Не даёт быстрых результатов</li>
-      </ul>
+      <div class="pain-layout">
+        <div class="pain-intro">
+          <p class="pain-eyebrow">Почему AI не работает у большинства</p>
+          <h2>Проблема не в AI. <br>Проблема в том, как его внедряют.</h2>
+          <p class="pain-subtitle">AI не даёт результат, когда его запускают без задачи, логики и связи с реальной работой команды.</p>
+          <p class="pain-bridge">Вот где ломается большинство решений:</p>
+        </div>
+        <div class="pain-grid">
+          <article class="pain-card">
+            <h3>Нет понятной задачи</h3>
+            <p>AI запускают “потому что надо”, а не под конкретный результат. В итоге он ничего полезного не меняет.</p>
+          </article>
+          <article class="pain-card">
+            <h3>Нет сценария работы</h3>
+            <p>Красиво показать AI мало. Нужно понимать, что он делает на каждом этапе.</p>
+          </article>
+          <article class="pain-card">
+            <h3>Не встроен в процессы</h3>
+            <p>Если AI живёт отдельно от команды, клиентов и CRM, он остаётся игрушкой, а не инструментом.</p>
+          </article>
+          <article class="pain-card">
+            <h3>Не доводят до результата</h3>
+            <p>AI нельзя просто включить. Его нужно тестировать, править и докручивать под реальную работу.</p>
+          </article>
+        </div>
+      </div>
+      <p class="pain-conclusion">Поэтому я не “подключаю AI”. <br>Я собираю рабочую систему под ваш бизнес.</p>
     </section>
 
     <section id="how" class="container section">
-      <h2>Как это работает</h2>
-      <ol class="steps">
-        <li>Вы даёте задачу</li>
-        <li>Я собираю GPT-агента под ваш процесс</li>
-        <li>Агент выполняет задачи автоматически</li>
-      </ol>
+      <div class="how-shell">
+        <div class="how-intro">
+          <h2>Как это работает</h2>
+          <p class="how-subtitle">Без сложных схем. Работа строится в 3 понятных шага.</p>
+        </div>
+        <div class="how-grid">
+          <article class="how-card">
+            <p class="how-num">01</p>
+            <h3>Вы ставите задачу</h3>
+            <p>Обсуждаем, что нужно автоматизировать, упростить или запустить и какой результат нужен бизнесу.</p>
+          </article>
+          <article class="how-card">
+            <p class="how-num">02</p>
+            <h3>Я собираю решение</h3>
+            <p>Проектирую AI-инструмент под ваш процесс: логику, сценарии, структуру и рабочий путь клиента.</p>
+          </article>
+          <article class="how-card">
+            <p class="how-num">03</p>
+            <h3>Запускаем и докручиваем</h3>
+            <p>Тестируем, запускаем, смотрим в работе и донастраиваем под реальные задачи команды и клиентов.</p>
+          </article>
+        </div>
+        <p class="how-result">На выходе вы получаете не “ещё один AI”, а рабочий инструмент, который экономит время, снижает рутину и помогает бизнесу расти.</p>
+      </div>
     </section>
 
     <section id="benefits" class="container section">
-      <h2>Результат для вашего бизнеса</h2>
-      <div class="cards-flow">
-        <div class="benefit-grid">
-          <article class="card">Экономия времени</article>
-          <article class="card">Снижение затрат</article>
-          <article class="card">Ускорение работы</article>
-          <article class="card">Масштабируемость</article>
-        </div>
-        <canvas id="cardsCanvas" aria-hidden="true"></canvas>
+      <h2>Форматы работы</h2>
+      <p class="benefits-subtitle">Я собираю AI-решения под конкретные задачи бизнеса: от автоматизации и GPT-агентов до сайтов, ботов и приложений под ваш процесс.</p>
+      <div class="formats-grid">
+        <article class="format-card">
+          <h3>Индивидуальная работа</h3>
+          <p class="format-text">Для тех, кому нужен AI не “разобраться”, а встроить в работу и монетизацию.</p>
+          <ul class="format-list">
+            <li>персональная стратегия</li>
+            <li>AI под вашу задачу</li>
+            <li>внедрение в процессы</li>
+            <li>сопровождение и корректировка</li>
+          </ul>
+          <p class="format-price">от 30 000 ₽ / месяц</p>
+          <p class="format-note">Подходит экспертам и предпринимателям, которым нужен результат, а не теория.</p>
+        </article>
+        <article class="format-card">
+          <h3>GPT-агенты для бизнеса</h3>
+          <p class="format-text">Собираю AI-инструменты под конкретные бизнес-задачи: продажи, заявки, контент, клиентский путь, автоматизация команды.</p>
+          <ul class="format-list">
+            <li>GPT-ассистенты</li>
+            <li>AI-операторы</li>
+            <li>AI-воронки</li>
+            <li>внутренние AI-инструменты</li>
+          </ul>
+          <p class="format-price">от 15 000 ₽</p>
+          <p class="format-note">Для бизнеса, где AI должен экономить время и приносить деньги.</p>
+        </article>
+        <article class="format-card">
+          <h3>Сайты и AI-упаковка</h3>
+          <p class="format-text">Собираю сайты, где AI работает на конверсию: структура, логика, контент и сценарии.</p>
+          <ul class="format-list">
+            <li>сайты</li>
+            <li>лендинги</li>
+            <li>AI-структура</li>
+            <li>тексты и воронка</li>
+          </ul>
+          <p class="format-price">от 45 000 ₽</p>
+          <p class="format-note">Для бизнеса, которому нужен сайт, который не висит, а продаёт.</p>
+        </article>
+        <article class="format-card">
+          <h3>Приложения под ваш бизнес</h3>
+          <p class="format-text">Собираю приложения под конкретный бизнес-процесс: обучение, сервис, внутренние задачи, клиентский путь.</p>
+          <ul class="format-list">
+            <li>мобильные приложения</li>
+            <li>клиентские кабинеты</li>
+            <li>внутренние сервисы</li>
+            <li>AI-функции внутри продукта</li>
+          </ul>
+          <p class="format-price">от 60 000 ₽</p>
+          <p class="format-note">Для бизнеса, которому нужен свой цифровой продукт, а не очередной конструктор.</p>
+        </article>
+        <article class="format-card">
+          <h3>AI-боты и автоматизация</h3>
+          <p class="format-text">Боты для Telegram и сайтов: заявки, ответы, записи, навигация, продажи и сценарии.</p>
+          <ul class="format-list">
+            <li>Telegram-боты</li>
+            <li>чат-боты для сайта</li>
+            <li>логика диалога</li>
+            <li>интеграции</li>
+          </ul>
+          <p class="format-price">от 15 000 ₽ + платформа</p>
+          <p class="format-note">Для бизнеса, где заявки, ответы и коммуникация не должны зависеть от ручного ресурса.</p>
+        </article>
       </div>
+      <a class="btn btn-primary btn-large formats-cta" href="https://t.me/neuro_for_me" target="_blank" rel="noopener noreferrer">Обсудить проект</a>
     </section>
 
     <section id="about" class="section about reveal">
       <div class="about-inner">
-        <div class="about-hero">
-          <div class="about-photo">
-            <img src="./images/profile-new.jpg" alt="Эксперт по автоматизации бизнеса и GPT-агентам" loading="lazy">
-          </div>
+        <div class="about-top">
           <div class="about-head">
-            <h1>Как я выстраиваю GPT-агентов под ваш бизнес</h1>
-            <p class="about-sub"></p>
+            <h1>Как я выстраиваю <span class="about-title-accent">AI-инструменты</span> под ваш бизнес</h1>
+            <p class="about-lead">Я не просто настраиваю AI - я выстраиваю рабочую систему под ваши задачи. Погружаюсь в процессы, понимаю, где теряются время и деньги, и создаю AI-инструмент, который действительно решает эти проблемы.</p>
+            <p class="about-lead">Для меня важно, чтобы решение было не только технологичным, но и удобным, понятным и приносило реальную пользу бизнесу.</p>
+          </div>
+          <div class="about-photo-wrap">
+            <div class="about-photo-glow" aria-hidden="true"></div>
+            <div class="about-photo">
+              <img src="./olga-expert-block.png" alt="Эксперт по AI-инструментам для бизнеса" loading="lazy">
+            </div>
           </div>
         </div>
-        <div class="about-content">
-          <p class="lead">Вы уже пытались автоматизировать процессы — и получили ещё больше ручной работы.</p>
-          <p>Сервисы не стыкуются, процессы ломаются, результата нет.</p>
-          <p>Я собираю систему под ваш бизнес, где GPT-агенты закрывают задачи, а не создают новые.</p>
-          <p>Что вы получаете:</p>
-          <ul class="process-list">
-            <li>документы и заявки — без рутины</li>
-            <li>ответы клиентам — быстрее</li>
-            <li>маркетинг и продажи — с фокусом на результат</li>
-          </ul>
-          <p class="final-accent">Каждый агент — под ваш процесс.</p>
-          <p class="result">Уже в первую неделю: меньше рутины, больше времени на деньги.</p>
+        <div class="about-stages" aria-label="Этапы работы">
+          <article class="about-stage-card">
+            <div class="about-stage-icon-wrap" aria-hidden="true">
+              <svg class="about-stage-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Анализ и погружение</h3>
+            <p>Изучаю бизнес-процессы, боли и цели, чтобы понять, где AI даст максимальный эффект.</p>
+          </article>
+          <article class="about-stage-card">
+            <div class="about-stage-icon-wrap" aria-hidden="true">
+              <svg class="about-stage-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Проектирование решения</h3>
+            <p>Проектирую логику, сценарии, интеграции и базы знаний под вашу модель работы.</p>
+          </article>
+          <article class="about-stage-card">
+            <div class="about-stage-icon-wrap" aria-hidden="true">
+              <svg class="about-stage-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z" stroke="currentColor" stroke-width="2"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.6a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Разработка и настройка</h3>
+            <p>Создаю и настраиваю AI-решение, обучаю на данных и подключаю нужные сервисы.</p>
+          </article>
+          <article class="about-stage-card">
+            <div class="about-stage-icon-wrap" aria-hidden="true">
+              <svg class="about-stage-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.5s4 4.2 4 9.5c0 2.8-.6 5.4-1 6.5l-3-2.8-3 2.8c-.4-1.1-1-3.7-1-6.5 0-5.3 4-9.5 4-9.5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 22V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 18h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Запуск и поддержка</h3>
+            <p>Тестирую, запускаю и сопровождаю, чтобы решение развивалось вместе с бизнесом.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="faq" class="container section">
-      <h2>FAQ</h2>
+      <h2>Частые вопросы</h2>
+      <p class="faq-subtitle">Коротко о том, как проходит работа, какие решения можно собрать и что нужно для старта.</p>
       <div class="faq-list">
         <details>
-          <summary>Что такое GPT-агент</summary>
-          <p>Это цифровой помощник, который выполняет повторяющиеся задачи по вашим правилам: отвечает, обрабатывает данные, готовит материалы и снижает ручную нагрузку.</p>
+          <summary>Какие AI-решения вы создаёте?</summary>
+          <p>Я создаю AI-инструменты под задачи бизнеса: GPT-агентов, AI-консультантов, Telegram-ботов, OpenClaw-агентов, multi-agent системы, сайты, приложения и интерактивные digital-механики. Формат решения подбирается под вашу задачу: автоматизация, заявки, клиентский сервис, продажи, обучение или вовлечение аудитории.</p>
         </details>
         <details>
-          <summary>Сколько стоит</summary>
-          <p>Стоимость зависит от сложности процесса. После короткого разбора в Telegram вы получите понятный объём работ и цену.</p>
+          <summary>Чем GPT-агент отличается от обычного чат-бота?</summary>
+          <p>Обычный бот чаще работает по заранее заданному сценарию. GPT-агент может анализировать запрос, вести более живую переписку, работать с базой знаний, помогать клиенту, подбирать решение и брать на себя часть рутинных задач. Это не просто “ответчик”, а рабочий AI-инструмент под конкретный процесс.</p>
         </details>
         <details>
-          <summary>Сроки</summary>
-          <p>Базовое решение запускается за 3-7 дней.</p>
+          <summary>Можно ли сделать бота для Telegram или сайта?</summary>
+          <p>Да. Я создаю ботов и AI-консультантов для Telegram-каналов, личных сообщений и сайтов. Они могут отвечать на вопросы, записывать клиентов, собирать заявки, вести переписку, помогать с выбором услуги и передавать клиента к вам или менеджеру.</p>
         </details>
         <details>
-          <summary>Нужны ли навыки</summary>
-          <p>Нет. Вы даёте задачу на языке бизнеса, а всю техническую часть я беру на себя.</p>
+          <summary>Сколько времени занимает разработка?</summary>
+          <p>Простые решения можно собрать за несколько дней. Более сложные проекты — GPT-агенты, OpenClaw-агенты, multi-agent системы, сайты или приложения — требуют больше времени, потому что важно не просто “запустить”, а продумать логику, сценарии, тексты, структуру и стабильную работу.</p>
         </details>
         <details>
-          <summary>Как происходит внедрение</summary>
-          <p>Определяем цель, собираем агента под ваш процесс, тестируем на ваших кейсах и запускаем в работу с минимальной нагрузкой на вас.</p>
+          <summary>Что нужно от меня для начала работы?</summary>
+          <p>На старте нужна задача: что вы хотите автоматизировать, улучшить или запустить. Дальше я помогаю сформулировать логику решения, определить сценарии, собрать структуру, подготовить тексты и понять, какой AI-инструмент подойдёт лучше всего.</p>
+        </details>
+        <details>
+          <summary>Можно ли начать с небольшого проекта?</summary>
+          <p>Да. Можно начать с одного понятного решения: Telegram-бота, AI-консультанта, мини-лендинга, GPT-агента для одной задачи или интерактивной механики. Это хороший способ быстро протестировать AI в бизнесе без лишней сложности и раздутого бюджета.</p>
         </details>
       </div>
     </section>
 
     <section class="conversion">
       <div class="conversion-inner">
-        <h2>Дополнительно для роста конверсии</h2>
+        <h2>Что вы получите уже на старте</h2>
         <div class="conversion-grid">
           <div class="conversion-card">
             <h3>Что вы можете получить уже сейчас</h3>
             <ul>
-              <li>✔ Чеклист: какие задачи выгодно отдать GPT-агентам</li>
+              <li>✔ Чеклист: какие задачи выгодно отдать AI-инструментам</li>
               <li>✔ Подбор решений под ваш бизнес</li>
               <li>✔ Разбор, где вы теряете деньги без автоматизации</li>
             </ul>
@@ -143,8 +270,8 @@
     </section>
 
     <section id="cta" class="container section cta">
-      <h2>Напишите в Telegram и получите разбор вашей задачи</h2>
-      <a class="btn btn-primary btn-large" href="https://t.me/neuro_for_me" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+      <h2>Напишите в Telegram и получите разбор проекта под ваш бизнес</h2>
+      <a class="btn btn-primary btn-large" href="https://t.me/neuro_for_me" target="_blank" rel="noopener noreferrer">Обсудить проект</a>
       <p class="secondary-contact">Или напишите на почту: <a href="mailto:olga.chichkun@mail.ru">olga.chichkun@mail.ru</a></p>
     </section>
   </main>
@@ -156,7 +283,7 @@
       <a href="offer.html">Договор оферты</a>
     </div>
   </footer>
-  <a id="sticky-telegram" class="sticky-telegram btn btn-primary" href="https://t.me/neuro_for_me" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+  <a id="sticky-telegram" class="sticky-telegram btn btn-primary" href="https://t.me/neuro_for_me" target="_blank" rel="noopener noreferrer">Обсудить проект</a>
 
   <script src="script.js"></script>
 </body>
